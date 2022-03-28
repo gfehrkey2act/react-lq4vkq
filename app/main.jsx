@@ -155,7 +155,9 @@ const App = () => {
         }}
         //data={filterBy(products, filter)}
         data={process(products, dataState)}
+        {...dataState}
         onDataStateChange={onDataStateChange}
+        sortable
         filterable
       >
         <GridColumn field="ProductName" title="Name" width="300px" />
